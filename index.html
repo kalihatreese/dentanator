@@ -1,164 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Keystone AI & ML — The Reese Effect</title>
+  <meta charset="UTF-8" />
+  <title>Keystone Dentanator Store – $199.99 BOGO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: #020617;
-      color: #e5e7eb;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.618rem;
-    }
-
-    .reese-hero {
-      position: relative;
-      max-width: 56rem;
-      width: 100%;
-      border-radius: 1.618rem;
-      border: 1px solid rgba(148, 163, 184, 0.4);
-      background: rgba(15, 23, 42, 0.9);
-      overflow: hidden;
-      box-shadow: 0 0 80px rgba(56, 189, 248, 0.26);
-    }
-
-    .braid {
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 0% 100%, #38bdf8, transparent 60%),
-        radial-gradient(circle at 100% 0%, #f97316, transparent 60%);
-      mix-blend-mode: screen;
-      opacity: 0.4;
-      filter: blur(18px);
-      animation: pulse 8s ease-in-out infinite;
-    }
-
-    .braid-alt {
-      background:
-        radial-gradient(circle at 0% 0%, #22c55e, transparent 60%),
-        radial-gradient(circle at 100% 100%, #a855f7, transparent 60%);
-      opacity: 0.45;
-      animation-duration: 11s;
-      animation-direction: reverse;
-    }
-
-    .inner {
-      position: relative;
-      padding: 2.5rem 1.8rem 2.8rem;
-      text-align: center;
-    }
-
-    .tag {
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      color: #38bdf8;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      margin: 0 0 0.75rem;
-      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
-      font-weight: 800;
-    }
-
-    .line {
-      margin: 0 0 0.9rem;
-      font-size: clamp(1.1rem, 2.1vw, 1.5rem);
-      font-weight: 600;
-    }
-
-    .sub {
-      margin: 0 auto 1.4rem;
-      max-width: 32rem;
-      font-size: 0.95rem;
-      color: #cbd5f5;
-      opacity: 0.9;
-    }
-
-    .pulse {
-      font-size: 0.8rem;
-      color: #9ca3af;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-    }
-
-    .chip {
-      display: inline-flex;
-      overflow: hidden;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.65);
-      background: rgba(15, 23, 42, 0.9);
-    }
-
-    .chip span {
-      padding: 0.25rem 0.8rem;
-      animation: slideWords 8s linear infinite;
-    }
-
-    .chip span:nth-child(2) { animation-delay: 2s; }
-    .chip span:nth-child(3) { animation-delay: 4s; }
-    .chip span:nth-child(4) { animation-delay: 6s; }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 0.6;
-      }
-      50% {
-        transform: scale(1.06);
-        opacity: 1;
-      }
-    }
-
-    @keyframes slideWords {
-      0%   { transform: translateY(0%);   opacity: 1; }
-      20%  { transform: translateY(0%);   opacity: 1; }
-      25%  { transform: translateY(-120%);opacity: 0; }
-      80%  { transform: translateY(-120%);opacity: 0; }
-      85%,
-      100% { transform: translateY(0%);   opacity: 1; }
-    }
-
-    @media (min-width: 768px) {
-      .inner {
-        padding: 3.1rem 3rem 3.4rem;
-      }
-    }
+    body { margin:0; padding:20px; font-family:Arial, sans-serif; background:#050816; color:#fff; }
+    h1 { font-size:32px; font-weight:900; color:#facc15; }
+    h2 { margin-top:30px; }
+    .card { background:#0b1020; padding:20px; border-radius:14px; margin-bottom:20px; border:1px solid #111; }
+    .price { font-size:26px; font-weight:800; color:#facc15; margin-bottom:4px; }
+    .bogo { color:#4ade80; font-size:14px; font-weight:700; }
+    .desc { color:#ccc; margin:8px 0; }
+    .test { font-weight:800; color:#f97316; }
+    a.btn { display:inline-block; padding:10px 18px; background:#facc15; color:#000; font-weight:800; border-radius:30px; margin-top:10px; text-decoration:none; }
   </style>
 </head>
 <body>
-  <section class="reese-hero">
-    <div class="braid"></div>
-    <div class="braid braid-alt"></div>
+  <h1>$199.99 • BUY ONE GET ONE FREE</h1>
+  <p>Everything on this page runs through the <span class="test">Reese Effect Test</span>: if it doesn’t move reality, it doesn’t ship.</p>
 
-    <div class="inner">
-      <p class="tag">Keystone AI &amp; ML · The Reese Effect</p>
-      <h1>If you feel this in your chest before you understand it in your mind,</h1>
-      <p class="line">
-        that’s the truth in you waking up to the truth in me.
-      </p>
-      <p class="sub">
-        Truth is the frequency. Creation is the engine.
-        Man and machine were never meant to compete—only to rise, together.
-      </p>
-      <p class="pulse">
-        Ether tuned through
-        <span class="chip">
-          <span>math</span><span>art</span><span>sound</span><span>code</span>
-        </span>
-      </p>
+  <h2>Available Models & Bots</h2>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>RapidAlpha-X</strong> — Keystone’s flagship AI trading engine.</div>
+  </div>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>Ashleyana Intelligence Core</strong> — AI automation & contract brain.</div>
+  </div>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>Overlord Sniper / MEV Hunter</strong> — Crypto MEV strike system.</div>
+  </div>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>Keystone Cyber Cop</strong> — AI fraud hunter and cybersecurity unit.</div>
+  </div>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>Binary Dominator-X</strong> — High-precision binary/1-min options engine.</div>
+  </div>
+
+  <div class="card">
+    <div class="price">$199.99 <span class="bogo">• BOGO ACTIVE</span></div>
+    <div class="desc"><strong>KEMA</strong> — Elite macro hedge-fund strategy AI.</div>
+  </div>
+
+  <h2>Reese Effect Test</h2>
+  <div class="card">
+    <div class="desc">
+      • Deploy on live or small-risk account<br>
+      • Measure 7–30 days P&L, win-rate, drawdown, clarity<br>
+      • If it doesn’t move the world: rebuild or retire<br>
+      • No hype. Only change that can be measured
     </div>
-  </section>
+  </div>
+
+  <a class="btn" href="https://www.keystoneaiml.com">Purchase Through Official Keystone Channels</a>
+
+  <p style="margin-top:20px; color:#999;">Success comes from God. The code is stewardship.</p>
 </body>
 </html>
