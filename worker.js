@@ -4,7 +4,7 @@ export default {
     const path = url.pathname === '/' ? '/index.html' : url.pathname;
     const key = path.replace(/^\//, '');
     const data = await env.__STATIC_CONTENT.get(key);
-    if (!data) return new Response('Not Found', { status: 404 });
+    if (!data) return new Response('Not found', { status: 404 });
     const ext = key.split('.').pop().toLowerCase();
     const ct =
       ext === 'html' ? 'text/html' :

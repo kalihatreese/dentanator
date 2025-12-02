@@ -4,6 +4,7 @@ type = "javascript"
 
 [build]
 command = ""
+upload_format = "service-worker"
 
 [assets]
 directory = "./"
